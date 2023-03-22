@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Source+Code+Pro:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Rajdhani:wght@300&family=Source+Code+Pro:ital@1&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Serif', serif;
+  scroll-behavior: smooth;
+}
+
+.normalText {
+  font-size: 17px;
+}
+#navbar {
+  display: flex;
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+  /* height: 50px; */
+  align-items: center;
+  justify-content: space-between;
+  z-index: 99;
+  background-color: rgb(0, 0, 0);
+}
+
+#nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  margin-top: 10px;
+}
+
+#navbar img {
+  height: 40px;
+  width: 140px;
+  margin-left: 2rem;
+}
+
+#nav li {
+  list-style: none;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transform: all 0.3s ease-in-out;
+  transform: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+#nav li a {
+  text-decoration: none;
+  color: white;
+  padding: 0px 10px;
+  margin: 5px 40px;
+  font-size: 18px;
+  transition: 1s ease;
+}
+
+#nav li a:hover {
+  color: tomato;
+}
+
+/* intro */
+#intro {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  padding-top: 50px;
+  height: 80vh;
+  flex-direction: row;
+  background: url('../IMAGES/bg.png') no-repeat center center/cover;
+
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info p:first-child {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 2.4rem;
+}
+
+.info p:nth-child(2) {
+  margin-top: 5px;
+  font-weight: bold;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2.6rem;
+  font-style: italic;
+}
+
+.info p:nth-child(3) {
+  /* font-weight: bold; */
+  margin-top: 5px;
+  margin-bottom: 30px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 2rem;
+  font-style: italic;
+}
+.but{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#contact a{
+  text-decoration: none;
+  color: black;
+}
+#contact{
+  padding: 5px 20px;
+  background-color: rgb(243, 235, 235);
+  box-shadow: inset -5px -5px 10px tomato, inset 5px 5px 10px tomato;
+  border: 2px solid tomato;
+  border-radius: 10px;
+}
+#download button
+{
+  background-color: rgb(243, 235, 235);
+  box-shadow: inset -5px -5px 10px tomato, inset 5px 5px 10px tomato;
+  /* margin-top: 25px;
+  margin-left: 50px;
+  */
+  border: 2px solid tomato;
+  border-radius: 10px;
+  color: black;
+
+}
+
+#download:hover,
+#contact:hover {
+  opacity: 0.6;
+}
+
+.prof img {
+  height: 60vh;
+  border-radius: 25px;
+  opacity: 0.8;
+  box-shadow: 10px 10px 10px tomato;
+  transform: skewX(-7deg);
+}
+
+/* about */
+.small {
+  font-size: 1.5rem;
+}
+
+.title {
+  text-align: center;
+}
+
+.about_box {
+  font-family: 'IBM Plex Serif', serif;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  justify-content: center;
+  padding-left: 70px;
+
+}
+
+#prof2 img {
+  height: 40vh;
+  border-radius: 25px;
+  filter: brightness(0.6);
+}
+
+#prof2 img:hover {
+  box-shadow: 5px 5px 10px tomato;
+  filter: brightness(0.8);
+}
+
+#about {
+  margin: 0em 3em;
+}
+
+.about {
+  padding: 2em 0em;
+  background-color: rgb(37, 37, 37);
+  color: rgb(244, 241, 241);
+}
+
+/* timeline */
+
+.timeline {
+  width: 100%;
+  height: 500px;
+  background-color: rgb(37, 37, 37);
+  color: #fff;
+  padding: 30px 20px;
+  box-shadow: 0px 0px 10px rgb(37, 37, 37);
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subtitle {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left: 25px;
+}
+
+.timeline ul {
+  list-style-type: none;
+  border-left: 2px solid tomato;
+  padding: 10px 5px;
+  float: right;
+}
+
+.timeline ul li {
+  padding: 20px 20px;
+  position: relative;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.timeline ul li span {
+  display: inline-block;
+  background-color: tomato;
+  border-radius: 25px;
+  padding: 2px 5px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.timeline ul li .content h3 {
+  color: #34ace0;
+  font-size: 17px;
+  padding-top: 5px;
+}
+
+.timeline ul li .content p {
+  padding: 5px 0px 15px 0px;
+  font-size: 15px;
+}
+
+.timeline ul li:before {
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: rgb(234, 178, 168);
+  border-radius: 50%;
+  left: -11px;
+  top: 28px;
+  transition: .5s;
+}
+
+.timeline ul li:hover {
+  background-color: #1e2425;
+}
+
+.timeline ul li:hover:before {
+  background-color: tomato;
+  box-shadow: 0px 0px 10px 2px tomato;
+}
+
+/* Skills section */
+.my-skills {
+  padding: 2em 0em;
+  background-color: rgb(37, 37, 37);
+  color: white;
+  height: 70vh;
+}
+
+.skills {
+  max-width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 5fr));
+  grid-gap: 20px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+.skills .card {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  background: rgb(11, 10, 10);
+  border-radius: 15px;
+  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+}
+
+.face {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.face1 {
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.face2 {
+  transition: 1s;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 10em;
+  color: #fff;
+  transition: 0.5s;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+
+
+
+.card:hover .face.face2 {
+  height: 60px;
+
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+.face2 img:hover {
+  filter: grayscale(0%);
+}
+
+.face2 img {
+  filter: grayscale(80%);
+  width: 6rem;
+}
+
+.card .face.face2 {
+  background: linear-gradient(150deg,
+      #614e3b 0%,
+      #5c5a5a 45%,
+      tomato 100%);
+  border-radius: 15px;
+}
+
+
+/* projects section  */
+.my-projects {
+  padding: 2em 0em;
+  background-color: rgb(37, 37, 37);
+  color: white;
+  height: 70vh;
+}
+
+.pro {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3rem;
+  font-family: 'IBM Plex Serif', serif;
+}
+
+.pro .card {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  background: #232323;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.pro .card:hover {
+  box-shadow: 5px 5px 10px tomato;
+}
+
+.pro .card .imgBx {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-80%);
+  z-index: 1;
+  width: 100%;
+  height: 220px;
+}
+
+
+.pro .card .imgBx img {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 250px;
+  object-fit: scale-down;
+}
+
+.pro .card .contentBx {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  z-index: 10;
+  font-size: 1.4rem;
+}
+
+.pro .card:hover .contentBx {
+  height: 150px;
+}
+
+.pro .card .contentBx h2 {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+  margin: 0;
+}
+
+.pro .card .contentBx .visit,
+.pro .card .contentBx .color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 10px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.pro .card:hover .contentBx .visit {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.3s;
+}
+
+.pro .card .contentBx .visit h3,
+.pro .card h3 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+
+.visit {
+  margin-top: 2rem;
+  font-family: 'IBM Plex Serif', serif;
+}
+
+.visit img {
+  margin-left: 1rem;
+  opacity: 0.5;
+  cursor: pointer;
+  filter: invert(0.5);
+}
+
+.visit img:hover {
+  opacity: 1;
+}
+
+/* Check Me on */
+.check-me-on {
+  padding: 2em 0em;
+  background-color: rgb(37, 37, 37);
+  color: white;
+  height: 60vh;
+}
+
+.see .check-card {
+  width: 190px;
+  height: 254px;
+  background: linear-gradient(150deg,
+      #614e3b 0%,
+      #5c5a5a 45%,
+      tomato 100%);
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.see .check-card:hover {
+  filter: brightness(0.7);
+}
+
+.see {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.check-card img {
+  margin-top: 1rem;
+  width: 10rem;
+  border-radius: 336px;
+  border: 2px solid white;
+}
+
+/* Certificates */
+
+/* footer */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  /* display: block; */
+  margin: 10px auto;
+}
+
+.main-footer {
+  padding-top: 20px;
+  padding-bottom: 3px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.2rem;
+  background-color: rgb(16, 15, 15);
+  /* height: 80px; */
+  z-index: 98;
+  color: white;
+  margin-top: -1rem;
+
+}

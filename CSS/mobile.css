@@ -1,0 +1,141 @@
+@media screen and (max-width: 1030px) {
+  .hamburger{
+    display: block;
+    margin-right: 40px;
+  }
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  #nav{
+    position:fixed;
+    left: -100%;
+    top: 50px;
+    height: 50vh;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    /* height: 100px; */
+  }
+  #navbar{
+    position: fixed;
+    top: 0;
+    height: 60px;
+  }
+  #nav li{
+    margin: 16px 0;
+  }
+  #nav.active{
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  #intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-top: 50px;
+    padding-left: 20px;
+    height:  70vh;
+    flex-direction: column;
+    
+}
+.prof img{
+  display: none;
+}
+.but{
+  justify-content: space-evenly;
+}
+}
+
+@media screen and (max-width: 1000px){
+  .about_box{
+    font-family: 'IBM Plex Serif', serif;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0px;
+    
+}
+#prof2 img{
+  height: 25vh;
+  border-radius: 25px;
+  filter: brightness(0.6);
+  margin-bottom: 10px;
+}
+.timeline{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.subtitle{
+  text-align: center;
+}
+}
+
+@media screen and (max-width:1000px) {
+  .skills{
+    max-width: 150vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
+    grid-gap: 10px;
+    margin: 0 auto;
+    padding: 40px 0;
+    
+}
+.my-skills{
+  height: 122vh;
+}
+}
+
+@media screen and (max-width: 1000px){
+  .pro{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+
+  }
+  .my-projects{
+    height: 100vh;
+    padding: 0.8rem;
+  }
+  .pro .card{
+    width: 180px;
+    height: 280px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .check-me-on{
+    height: 80vh;
+    padding: 1.1rem;
+  }
+  .see{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  .see .check-card{
+    width: 170px;
+    height: 230px;
+  }
+  .check-card img{
+    width:8rem;
+  }
+ }
+ @media screen and (max-width:560px) {
+  input,textarea{
+    width: 250px;
+  }
+ }

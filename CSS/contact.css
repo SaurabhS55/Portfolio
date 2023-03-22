@@ -1,0 +1,68 @@
+.contact-me{
+    /* margin-top: 60px;
+    max-height: 100%;
+    max-width: 100%;*/
+    padding: 30px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    background-color: rgb(38, 38, 38);
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin-top: 20px;
+}
+input,textarea{
+    margin: 7px 75px;
+    padding: 5px;
+    outline: none;
+    width: 400px;
+    border-radius: 10px;
+}
+.submit{
+    display: block;
+    margin: 7px auto;
+    outline: none;
+    background-color: rgb(243, 235, 235);
+    box-shadow: inset -5px -5px 10px tomato, inset 5px 5px 10px tomato;
+    width: 150px;
+    padding: 5px;
+    border: 2px solid tomato;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.submit:hover{
+    opacity: 0.7;
+}
+#submit
+{
+    background-color: rgb(243, 235, 235);
+    box-shadow: inset -5px -5px 10px tomato, inset 5px 5px 10px tomato;
+    margin-top: 25px;
+    margin-left: 100px;
+    padding: 5px 10px;
+    border: 2px solid tomato;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#submit a{
+    text-decoration: none;
+    color: black;
+}
+
+#success{
+    display: none;
+    margin: 0 auto;
+    padding: 0px;
+    width: 15rem;
+    text-align: center;
+    background-color: rgb(38, 38, 38);
+    color: rgb(246, 241, 241);
+    border: none;
+}
