@@ -8,10 +8,6 @@ nav.addEventListener('click',()=>{
     ham.classList.remove('active');
     nav.classList.remove('active');
 })
-AOS.init({
-    offset: 300,
-    duration: 1000,
-})
 function sendMail(){
     const service="service_2musf6d"
     const template="template_37ccgl6"
