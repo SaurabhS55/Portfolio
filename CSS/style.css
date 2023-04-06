@@ -117,29 +117,25 @@
   align-items: center;
   justify-content: space-around;
 }
-#contact a{
+#contact a,#download a{
   text-decoration: none;
   color: black;
 }
-#contact{
+#contact,#download{
   padding: 5px 20px;
   background-color: rgb(243, 235, 235);
   box-shadow: inset -5px -5px 10px tomato, inset 5px 5px 10px tomato;
   border: 2px solid tomato;
   border-radius: 10px;
 }
-#download button
+/* #download button
 {
   background-color: rgb(243, 235, 235);
   box-shadow: inset -5px -5px 10px tomato, inset 5px 5px 10px tomato;
   /* margin-top: 25px;
   margin-left: 50px;
   */
-  border: 2px solid tomato;
-  border-radius: 10px;
-  color: black;
-
-}
+  
 
 #download:hover,
 #contact:hover {

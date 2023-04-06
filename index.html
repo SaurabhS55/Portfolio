@@ -27,30 +27,30 @@
   </nav>
   <section id="intro">
     <div class="info">
-      <p>Hi, I am</p>
-      <p>Saurabh Salunke.</p>
-      <p>I'm Web Developer and App Developer.</p>
-      <div class="but">
-        <span id="download"><button type="submit" class="submit" disabled>My Resume</button></span>
+      <p data-aos="fade-left">Hi, I am</p>
+      <p data-aos="fade-right">Saurabh Salunke.</p>
+      <p data-aos="fade-left">I'm Web Developer and App Developer.</p>
+      <div class="but" data-aos="fade-right">
+        <span id="download"><a href="../IMAGES/saurabh.pdf">My Resume</a>></span>
         <span id="contact"> <a href="#f">Contact</a></span>
       </div>
     </div>
-    <div class="prof"> <img src="../IMAGES/prof3.jpg" alt="#"/></div>
+    <div class="prof"> <img src="../IMAGES/prof3.jpg" alt="#" data-aos="fade-down-right"/></div>
   </section>
   <section class="about" id="ab">
     <h2 class="title">About</h2>
     <div class="about_box">
-      <div id="prof2"><img src="../IMAGES/20221014_111050.png" alt="#"/></div>
+      <div id="prof2" data-aos="flip-left"><img src="../IMAGES/20221014_111050.png" alt="#"/></div>
       <div id="about">
-        <p class="normalText">Hi, My self Saurabh Salunke and I’m Web Developer and App Developer.
+        <p class="normalText" data-aos="fade-down">Hi, My self Saurabh Salunke and I’m Web Developer and App Developer.
           I have always been
           passionate about development. Currently I’m working on my DSA and Problem solving skills.</p>
-        <p class="normalText">I am always looking for new challenges and opportunities to grow and
+        <p class="normalText" data-aos="fade-down">I am always looking for new challenges and opportunities to grow and
           learn as a Software
           Engineer. I hope you enjoy looking through my portfolio and getting to know more about my work. </p>
-        <p class="normalText" >Thank you, for visiting my website !</p>
-        <h3 class="subtitle">Education :-</h3>
-        <div class="timeline">
+        <p class="normalText" data-aos="fade-down">Thank you, for visiting my website !</p>
+        <h3 class="subtitle" data-aos="fade-down">Education :-</h3>
+        <div class="timeline" data-aos="fade-down">
           <ul>
             <li><span>2018-19</span></li>
             <div class="content">
@@ -74,7 +74,7 @@
   </section>
   <section class="my-skills" id="sk">
     <h2 class="title">Skills </h2>
-    <div class="skills" >
+    <div class="skills" data-aos="fade-down">
       <div class="card">
         <div class="face face1">
           <div class="content">
@@ -161,7 +161,7 @@
   </section>
   <section class="my-projects" id="pr">
     <h2 class="title">Projects</h2>
-    <div class="pro">
+    <div class="pro" data-aos="fade-down">
       <div class="card">
         <div class="imgBx"><img src="../IMAGES/abpn.png" /></div>
         <div class="contentBx">
@@ -210,7 +210,7 @@
   </section>
   <section class="check-me-on" id="cmo">
     <h2 class="title">Check Me On </h2>
-    <div class="see">
+    <div class="see" data-aos="fade-down">
       <div class="check-card">
         <h3>GitHub</h3><a href="https://github.com/saurabh-sss-555" target="_blank"><img
             src="../IMAGES/github-logo.svg" /></a>
@@ -231,7 +231,7 @@
   </section>
   <section class="contact-me">  
     <h2>Contact me</h2>
-    <form class="form" id="f" onsubmit="reset(); return false" method="post">Name :
+    <form class="form" id="f" onsubmit="reset(); return false" method="post" data-aos="fade-down">Name :
       <input class="name" type="text" id="name" name="name" placeholder="Enter your name" />Phone No. :
       <input class="pno" type="number" id="pno" name="pno" placeholder="Enter your phone number" />Email Id :
       <input class="name" type="email" id="email" name="gmail" placeholder="Enter your email id" />Address :
@@ -263,6 +263,14 @@
     (function(){
       emailjs.init("ybptaVNOWj3D7kayu");
     })();
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 1000,
+      });
+      
     </script>
     <script src="../JS/index.js"></script>
 </body>
