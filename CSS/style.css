@@ -124,7 +124,7 @@
 #contact,#download{
   padding: 5px 20px;
   background-color: rgb(243, 235, 235);
-  box-shadow: inset -5px -5px 10px tomato, inset 5px 5px 10px tomato;
+  box-shadow: inset -5px -5px 20px tomato, inset 5px 5px 20px tomato;
   border: 2px solid tomato;
   border-radius: 10px;
 }

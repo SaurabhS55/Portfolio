@@ -17,6 +17,7 @@
     margin-top: 20px;
 }
 input,textarea{
+    background-color: rgb(190, 180, 180);
     margin: 7px 75px;
     padding: 5px;
     outline: none;
@@ -28,7 +29,7 @@ input,textarea{
     margin: 7px auto;
     outline: none;
     background-color: rgb(243, 235, 235);
-    box-shadow: inset -5px -5px 10px tomato, inset 5px 5px 10px tomato;
+    box-shadow: inset -5px -5px 20px tomato, inset 5px 5px 20px tomato;
     width: 150px;
     padding: 5px;
     border: 2px solid tomato;
