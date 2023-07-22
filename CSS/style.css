@@ -10,6 +10,20 @@
   font-family: 'IBM Plex Serif', serif;
   scroll-behavior: smooth;
 }
+body{
+  font-family: 'josifin sans', sans-serif;
+  overflow: auto;
+}
+::-webkit-scrollbar{
+  width: 5px;
+  background: rgb(35, 33, 33);
+}
+::-webkit-scrollbar-thumb{
+  background: tomato;
+  border-radius: 10px;
+}
+
+/* Navbar section */
 
 .normalText {
   font-size: 17px;
@@ -19,7 +33,7 @@
   position: fixed;
   top: 0px;
   width: 100vw;
-  /* height: 50px; */
+  height: 10%;
   align-items: center;
   justify-content: space-between;
   z-index: 99;
@@ -65,13 +79,15 @@
   color: white;
   padding: 0px 10px;
   margin: 5px 40px;
-  font-size: 18px;
+  font-size: 1.3rem;
   transition: 1s ease;
+  font-weight: bold;    
 }
 
 #nav li a:hover {
   color: tomato;
 }
+
 
 /* intro */
 #intro {
@@ -146,8 +162,9 @@
   height: 60vh;
   border-radius: 25px;
   opacity: 0.8;
-  box-shadow: 10px 10px 10px tomato;
+  /* box-shadow: 10px 10px 10px tomato; */
   transform: skewX(-7deg);
+  /* mix-blend-mode:normal; */
 }
 
 /* about */
@@ -160,7 +177,7 @@
 }
 
 .about_box {
-  font-family: 'IBM Plex Serif', serif;
+  /* font-family: 'IBM Plex Serif', serif;   */
   display: flex;
   flex-direction: row;
   margin-top: 20px;
@@ -176,7 +193,7 @@
 }
 
 #prof2 img:hover {
-  box-shadow: 5px 5px 10px tomato;
+  /* box-shadow: 5px 5px 10px tomato; */
   filter: brightness(0.8);
 }
 
@@ -222,6 +239,7 @@
   padding: 20px 20px;
   position: relative;
   cursor: pointer;
+  border-radius: 15px;
   transition: .5s;
 }
 
@@ -258,7 +276,7 @@
 }
 
 .timeline ul li:hover {
-  background-color: #1e2425;
+  background-color: rgba(35, 33, 33);
 }
 
 .timeline ul li:hover:before {
@@ -271,7 +289,7 @@
   padding: 2em 0em;
   background-color: rgb(37, 37, 37);
   color: white;
-  height: 70vh;
+  height: 100%;
 }
 
 .skills {
@@ -356,7 +374,7 @@ h2 {
   background: linear-gradient(150deg,
       #614e3b 0%,
       #5c5a5a 45%,
-      tomato 100%);
+      rgb(128, 62, 51) 100%);
   border-radius: 15px;
 }
 
@@ -366,52 +384,59 @@ h2 {
   padding: 2em 0em;
   background-color: rgb(37, 37, 37);
   color: white;
-  height: 70vh;
+  height: 100%;
 }
 
-.pro {
-  position: relative;
+.pro1 {
   display: flex;
+  /* gap: 2.6rem; */
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem; 
+}
+.pro2{
+  display:flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   margin-top: 3rem;
-  font-family: 'IBM Plex Serif', serif;
 }
 
-.pro .card {
+.pro1 .card ,.pro2 .card{
   position: relative;
   width: 300px;
   height: 350px;
-  background: #232323;
+  background: rgb(32, 32, 32);
   border-radius: 20px;
   overflow: hidden;
+  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+  transition: 1s ease;
 }
 
-.pro .card:hover {
-  box-shadow: 5px 5px 10px tomato;
+.pro1 .card:hover,.pro2 .card:hover {
+  box-shadow: 0px 0px 0px rgba(241, 236, 236, 0.57),0px 0px 0px rgba(241, 236, 236, 0.57);
 }
 
-.pro .card .imgBx {
+.pro1 .card .imgBx,.pro2 .card .imgBx {
   position: absolute;
   top: 50%;
-  transform: translateY(-80%);
+  transform: translateY(-90%);
   z-index: 1;
   width: 100%;
   height: 220px;
 }
 
-
-.pro .card .imgBx img {
+.pro1 .card .imgBx img,.pro2 .card .imgBx img {
   position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 300px;
-  height: 250px;
-  object-fit: scale-down;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: 0.5s;
 }
 
-.pro .card .contentBx {
+.pro1 .card .contentBx,.pro2 .card .contentBx {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -422,11 +447,11 @@ h2 {
   font-size: 1.4rem;
 }
 
-.pro .card:hover .contentBx {
+.pro1 .card:hover .contentBx , .pro2 .card:hover .contentBx {
   height: 150px;
 }
 
-.pro .card .contentBx h2 {
+.pro1 .card .contentBx h2,.pro2 .card .contentBx h2 {
   position: relative;
   font-weight: 600;
   letter-spacing: 1px;
@@ -434,27 +459,15 @@ h2 {
   margin: 0;
 }
 
-.pro .card .contentBx .visit,
-.pro .card .contentBx .color {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 8px 10px;
-  transition: 0.5s;
-  opacity: 0;
-  visibility: hidden;
-  padding-top: 0;
-  padding-bottom: 0;
-}
 
-.pro .card:hover .contentBx .visit {
+.pro1 .card:hover .contentBx .visit, .pro2 .card:hover .contentBx .visit {
   opacity: 1;
   visibility: visible;
   transition-delay: 0.3s;
 }
 
-.pro .card .contentBx .visit h3,
-.pro .card h3 {
+.pro1 .card .contentBx .visit h3,
+.pro1 .card h3 {
   color: #fff;
   font-weight: 300;
   font-size: 14px;
@@ -462,12 +475,23 @@ h2 {
   letter-spacing: 2px;
   margin-right: 10px;
 }
-
+.pro2 .card .contentBx .visit h3,
+.pro2 .card h3{
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
 .visit {
   margin-top: 2rem;
   font-family: 'IBM Plex Serif', serif;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  opacity: 0;
 }
-
 .visit img {
   margin-left: 1rem;
   opacity: 0.5;
@@ -484,7 +508,7 @@ h2 {
   padding: 2em 0em;
   background-color: rgb(37, 37, 37);
   color: white;
-  height: 60vh;
+  height: 100%;
 }
 
 .see .check-card {
@@ -493,7 +517,7 @@ h2 {
   background: linear-gradient(150deg,
       #614e3b 0%,
       #5c5a5a 45%,
-      tomato 100%);
+      rgb(128, 62, 51) 100%);
   border-radius: 50px;
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
   display: flex;
