@@ -144,14 +144,6 @@ body{
   border: 2px solid tomato;
   border-radius: 10px;
 }
-/* #download button
-{
-  background-color: rgb(243, 235, 235);
-  box-shadow: inset -5px -5px 10px tomato, inset 5px 5px 10px tomato;
-  /* margin-top: 25px;
-  margin-left: 50px;
-  */
-  
 
 #download:hover,
 #contact:hover {
@@ -189,12 +181,13 @@ body{
 #prof2 img {
   height: 40vh;
   border-radius: 25px;
-  filter: brightness(0.6);
+  filter: grayscale(80%);
+  transition: filter 1s ease-in-out;
 }
 
 #prof2 img:hover {
   /* box-shadow: 5px 5px 10px tomato; */
-  filter: brightness(0.8);
+  filter: grayscale(10%);
 }
 
 #about {
@@ -316,7 +309,9 @@ body{
   margin: 0 auto;
   background: rgb(11, 10, 10);
   border-radius: 15px;
-  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+  outline: none;
+  border: none;
+  box-shadow: 0 15px 60px rgba(29, 28, 28, 0.5);
 }
 
 .face {
