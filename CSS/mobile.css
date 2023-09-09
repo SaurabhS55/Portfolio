@@ -43,8 +43,19 @@
     width: 50%;
   }
 }
-
-@media screen and (max-width: 930px) {
+@media screen and (min-width: 768px) and (max-width:2100px){
+  .prof img{
+    height: 30vh;
+    border-radius: 25px;
+  }
+  .info p:nth-child(2){
+    font-size: 3rem;
+  }
+  .info p:nth-child(1){
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 768px) {
   #intro{
     display: flex;
     justify-content: center;
