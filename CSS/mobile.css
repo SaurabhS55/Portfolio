@@ -12,11 +12,15 @@
   .hamburger.active .bar:nth-child(3){
     transform: translateY(-8px) rotate(-45deg);
   }
+  #navbar img{
+    width: fit-content;
+    object-fit: cover;
+  }
   #nav{
     position:fixed;
     left: -100%;
     top: 50px;
-    height: 50vh;
+    height: fit-content;
     flex-direction: column;
     background-color: rgb(0, 0, 0);
     width: 100%;
@@ -35,6 +39,9 @@
   #nav.active{
     left: 0;
   }
+  body::before{
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 930px) {
@@ -45,7 +52,7 @@
     color: white;
     padding-top: 50px;
     padding-left: 20px;
-    height:  70vh;
+    height:  fit-content;
     flex-direction: column;
     
 }
@@ -66,18 +73,18 @@
     align-items: center;
     justify-content: center;
     padding-left: 0px;
-    
+    height: fit-content;
 }
 #prof2 img{
-  height: 25vh;
+  height: 40vh;
   border-radius: 25px;
-  filter: brightness(0.6);
   margin-bottom: 10px;
 }
 .timeline{
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 2rem;
 }
 .subtitle{
   text-align: center;
@@ -92,10 +99,11 @@
     grid-gap: 10px;
     margin: 0 auto;
     padding: 40px 0;
+    height: fit-content;
     
 }
 .my-skills{
-  height: 100%;
+  height: fit-content;
 }
 }
 
@@ -115,7 +123,7 @@
     gap: 1.5rem;
   }
   .my-projects{
-    height: 100%;
+    height: fit-content;
     padding: 2rem 0.8rem;
   }
   .pro .card{
@@ -126,7 +134,7 @@
 
 @media screen and (max-width: 768px){
   .check-me-on{
-    height: 100%;
+    height: fit-content;
     padding: 3rem 1rem;
   }
   .see{
@@ -141,4 +149,9 @@
   .check-card img{
     width:8rem;
   }
+  .footer{
+    width: 100%;
+    justify-content: space-around;
+  }
+
  }

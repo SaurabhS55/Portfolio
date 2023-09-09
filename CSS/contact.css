@@ -8,7 +8,7 @@
     justify-content: space-around;
     align-items: center;
     color: white;
-    background-color: rgb(38, 38, 38);
+    background-color: rgb(26,32,44);
 }
 .form{
     display: flex;
@@ -19,32 +19,35 @@
 }
 input,textarea{
     font-family: 'josifin sans', sans-serif;
-    background-color: rgb(190, 180, 180);
+    background-color: rgb(35,41,52);
     margin: 7px 75px;
     padding: 7px;
     outline: none;
     width: 375px;
     border-radius: 10px;
+    border: none;
+    color: rgb(241, 237, 237);
 }
 input:focus,textarea:focus{
-    background-color: rgb(243, 235, 235);
+    background-color: rgba(30, 29, 29, 0.04);
+    border: 1px solid rgb(117, 174, 188);
 }
 .submit{
-    display: block;
-    margin: 7px auto;
-    outline: none;
-    background-color: rgb(243, 235, 235);
-    box-shadow: inset -5px -5px 20px tomato, inset 5px 5px 20px tomato;
-    width: 150px;
-    padding: 5px;
-    border: 2px solid tomato;
-    border-radius: 15px;
-    cursor: pointer;
+    padding: 12px 20px;
+    width: 375px;
+    color: rgb(117, 174, 188);
+    background-color: rgb(26,32,44);
+    border: 2px solid rgb(117, 174, 188);
+  /* box-shadow:inset 25px 25px 25px rgb(133, 219, 222),inset -20px -20px 25px rgb(44, 190, 209); */
+  border-radius: 10px;
+  font-size: 1.125rem;;
+  outline: none;
+  cursor: pointer;
 }
 .submit:hover{
-    opacity: 0.7;
+    background-color: rgba(30, 29, 29, 0.04);
 }
-#submit
+/* #submit
 {
     background-color: rgb(243, 235, 235);
     box-shadow: inset -5px -5px 10px tomato, inset 5px 5px 10px tomato;
@@ -56,7 +59,7 @@ input:focus,textarea:focus{
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 #submit a{
     text-decoration: none;
     color: black;
@@ -68,7 +71,7 @@ input:focus,textarea:focus{
     padding: 0px;
     width: 15rem;
     text-align: center;
-    background-color: rgb(38, 38, 38);
+    background-color: rgb(26,32,44);
     color: rgb(246, 241, 241);
     border: none;
 }
