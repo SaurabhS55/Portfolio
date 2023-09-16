@@ -109,7 +109,7 @@ body::before{
   justify-content: space-around;
   align-items: center;
   width: 100vw;
-  height: 75%;
+  height: fit-content;
   flex-direction: row;
   background-color: rgb(26,32,44);
   padding: 3rem 0px;
@@ -216,7 +216,7 @@ body::before{
   justify-content: center;
   padding-left: 70px;
   margin-top: 50px;
-  height: 100%;
+  height: fit-content;
  
 }
 
@@ -324,7 +324,7 @@ body::before{
   padding: 2em 0em;
   background-color: rgb(26,32,44);
   color: white;
-  height: 100%;
+  height: fit-content;
 }
 
 .skills {
