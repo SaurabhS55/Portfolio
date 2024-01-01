@@ -54,7 +54,7 @@ body::before{
   display: flex;
   position: fixed;
   top: 0px;
-  width: 100%;
+  width: 100vw;
   height: 10%;
   align-items: center;
   justify-content: space-between;
