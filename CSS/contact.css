@@ -16,14 +16,16 @@
     align-items: baseline;
     margin-top: 20px;
     gap: 0.7rem;
+    width: fit-content;
+    padding: 1rem 5rem;
 }
 input,textarea{
     font-family: 'josifin sans', sans-serif;
     background-color: rgb(35,41,52);
     margin: 7px 75px;
-    padding: 7px;
+    padding: 0.6rem 0.5rem;
     outline: none;
-    width: 375px;
+    width: 40rem;
     border-radius: 10px;
     border: none;
     color: rgb(241, 237, 237);
@@ -34,7 +36,7 @@ input:focus,textarea:focus{
 }
 .submit{
     padding: 12px 20px;
-    width: 375px;
+    width: 40rem;
     color: rgb(117, 174, 188);
     background-color: rgb(26,32,44);
     border: 2px solid rgb(117, 174, 188);

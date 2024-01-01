@@ -40,12 +40,12 @@
     left: 0;
   }
   body::before{
-    width: 50%;
+    display: none;
   }
 }
 @media screen and (min-width: 768px) and (max-width:1200px){
   .prof img{
-    height: 30vh;
+    height: 30rem;
     border-radius: 25px;
   }
   .info p:nth-child(2){
@@ -55,7 +55,7 @@
     font-size: 1.8rem;
   }
   #prof2 img{
-    height:25vh;
+    height:30rem;
   }
   #about{
     margin-top: 2rem;
@@ -96,7 +96,7 @@
     height: fit-content;
 }
 #prof2 img{
-  height: 40vh;
+  height: 18rem;
   border-radius: 25px;
   margin-bottom: 10px;
 }
@@ -113,13 +113,13 @@
 
 @media screen and (max-width:1000px) {
   .skills{
-    max-width: 150vw;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
-    grid-gap: 10px;
-    margin: 0 auto;
-    padding: 40px 0;
-    height: fit-content;
+    width: 70%;
+  margin: 0 auto;
+  padding: 40px 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr)); /* Set 5 columns with equal width */
+  gap: 1rem; /* Set the gap between cards */
+  justify-content: center; /* Center the grid horizontally */
     
 }
 .my-skills{
@@ -129,13 +129,6 @@
 
 @media screen and (max-width: 1000px){
   .pro1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5rem;
-  }
-  .pro2{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -153,6 +146,15 @@
 }
 
 @media screen and (max-width: 768px){
+  .form input{
+    width: 22rem;
+  }
+  .form textarea{
+    width: 22rem;
+  }
+  .form .submit{
+    width: 22rem;
+  }
   .check-me-on{
     height: fit-content;
     padding: 3rem 1rem;

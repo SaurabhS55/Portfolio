@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Source+Code+Pro:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Rajdhani:wght@300&family=Source+Code+Pro:ital@1&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@500&family=Lato:wght@300;400;700&family=Poppins&family=Ubuntu&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +13,7 @@
   color: white;
 }
 body{
-  font-family: 'josifin sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   overflow: auto;
   width: 100vw;
   border: 1px solid black;
@@ -25,11 +25,11 @@ body{
 }
 body::before{
   content: '';
-  position: fixed;
-  top: 350px;
-  right: 0px;
-  width: 30%;
-  height: 50%;
+  position: absolute;
+  top: 3520px;
+  right: -190px;
+  width: 40%;
+  height: 40%;
   background-image: url('../IMAGES/blob.svg');
   background-repeat: no-repeat;
   background-position: center;
@@ -40,7 +40,7 @@ body::before{
   background-color: rgb(26,32,44);
 }
 ::-webkit-scrollbar-thumb{
-  background: rgb(103, 157, 168);
+  background: rgb(83, 111, 176);
   border-radius: 10px;
 }
 
@@ -59,6 +59,7 @@ body::before{
   align-items: center;
   justify-content: space-between;
   z-index: 99;
+  backdrop-filter: blur(2px);
 }
 
 #nav {
@@ -89,7 +90,7 @@ body::before{
 }
 
 #nav li a {
-  color: rgb(176, 202, 226);
+  color: rgb(189, 203, 216);
   padding: 0px 10px;
   margin: 5px 40px;
   font-size: 1.3rem;
@@ -112,7 +113,7 @@ body::before{
   height: fit-content;
   flex-direction: row;
   background-color: rgb(26,32,44);
-  padding: 3rem 0px;
+  padding: 6rem 0px;
 }
 
 .info {
@@ -121,16 +122,16 @@ body::before{
 }
 
 .info p:first-child {
-  font-family: 'Source Code Pro', monospace;
-  font-size: 2.4rem;
+  /* font-family: 'Source Code Pro', monospace; */
+  font-size: 2.5rem;
+  line-height: -50px;
 }
 
 .info p:nth-child(2) {
-  margin-top: 5px;
   font-weight: bold;
-  font-family: 'Josefin Sans', sans-serif;
+  /* font-family: 'Josefin Sans', sans-serif; */
   font-size: 4rem;
-  background-image: linear-gradient(to right, #3791db, #73bbd5,#593878);
+  background-image: linear-gradient(to right, #4168bd, #3791db,#413878);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -146,9 +147,8 @@ body::before{
 }
 .but{
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-top: 45px;
+  gap: 2rem;
+  margin-top: 25px;
 }
 #contact a{
   text-decoration: none;
@@ -159,22 +159,28 @@ body::before{
   text-decoration: none;
 }
 #contact{
-  padding: 12px 20px;
-  box-shadow:inset 25px 25px 25px rgb(133, 219, 222),inset -20px -20px 25px rgb(44, 190, 209);
+  padding: 8px 20px;
+  background-color:  rgb(110, 140, 200);
   border-radius: 10px;
   font-size: 1.125rem;;
   outline: none;
   border: none;
 }
 #download{
-  padding: 0px 12px;
+  padding: 2px 15px;
   border: 0.012rem solid rgb(168, 168, 168);
   background-color: rgb(35, 40, 50);
   border-radius: 10px;
   font-size: 1.125rem;;
   outline: none;
 }
+#download a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 #download a img{
+  height: 2.3rem;
   filter: invert(1);
 }
 #download:hover{
@@ -221,7 +227,7 @@ body::before{
 }
 
 #prof2 img {
-  height: 55vh;
+  height: 20rem;
   border-radius: 25px;
   filter: grayscale(80%);
   transition: filter 1s ease-in-out;
@@ -279,7 +285,7 @@ body::before{
 
 .timeline ul li span {
   display: inline-block;
-  background-color: rgb(176, 202, 226);
+  background-color: rgb(165, 182, 220);
   border-radius: 25px;
   padding: 2px 5px;
   font-size: 15px;
@@ -315,8 +321,8 @@ body::before{
 }
 
 .timeline ul li:hover:before {
-  background-color: rgb(176, 202, 226);
-  box-shadow: 0px 0px 10px 2px rgb(176, 202, 226);
+  background-color: rgb(110, 140, 200);
+  box-shadow: 0px 0px 10px 2px rgb(110, 140, 200);
 }
 
 /* Skills section */
@@ -328,13 +334,15 @@ body::before{
 }
 
 .skills {
-  max-width: 100vw;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 5fr));
-  grid-gap: 20px;
+  width: 70%;
   margin: 0 auto;
   padding: 40px 0;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr)); /* Set 5 columns with equal width */
+  gap: 1rem; /* Set the gap between cards */
+  justify-content: center; /* Center the grid horizontally */
 }
+
 
 .img {
   width: 100%;
@@ -346,8 +354,8 @@ body::before{
 
 .skills .card {
   position: relative;
-  width: 150px;
-  height: 150px;
+  width: 8rem;
+  height: 8rem;
   margin: 0 auto;
   background-color: rgb(26,32,44);
   border-radius: 15px;
@@ -367,15 +375,6 @@ body::before{
   align-items: center;
 }
 
-.face1 {
-  box-sizing: border-box;
-  padding: 20px;
-}
-
-.face2 {
-  transition: 1s;
-}
-
 h2 {
   margin: 0;
   padding: 0;
@@ -384,14 +383,6 @@ h2 {
   transition: 0.5s;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   z-index: 10;
-}
-
-
-
-
-.card:hover .face.face2 {
-  height: 60px;
-  transition: 1.02s ease-in-out;
 }
 
 h2 {
@@ -404,17 +395,24 @@ h2 {
 
 .face2 img {
   filter: brightness(70%) grayscale(100%);
-  width: 6rem;
+  filter: invert(1);
+  width: 4rem;
 }
 
 .card .face.face2 {
   background: linear-gradient(150deg,
-      #b2d5eb 0%,
-      #6ba9bd 35%,
-      rgb(51, 104, 128) 80%);
-  border-radius: 15px;
+      #2b97f0 0%,
+      #15639a 20%,
+      rgb(105, 144, 218) 90%);
+  border-radius: 10px;
 }
-
+.card .face.face2:hover {
+  background: linear-gradient(250deg,
+      #255ade 0%,
+      #6ba9bd 35%,
+      rgb(29, 83, 185) 80%);
+  border-radius: 10px;
+}
 
 /* projects section  */
 .my-projects {
@@ -550,9 +548,9 @@ h2 {
   width: 190px;
   height: 254px;
   background: linear-gradient(150deg,
-      #b2d5eb 0%,
-      #6ba9bd 35%,
-      rgb(51, 104, 128) 80%);
+  rgb(51, 104, 128) 0%,
+      #6ba9bd 55%,
+      #b2d5eb 95%);
   border-radius: 50px;
   /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
   display: flex;
